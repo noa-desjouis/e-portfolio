@@ -1,9 +1,6 @@
 year,semester,course,category,credits,description,key_learning
-Year 1,S1,Calculus and Linear Algebra,Science,6,Foundations of analysis and matrix methods for engineering.,Modelling problems with mathematical tools
-Year 1,S1,Introduction to Programming,Computer Science,4,Algorithms and programming in Python.,Writing clean and testable code
-Year 1,S2,Mechanics,Engineering Science,5,Statics and dynamics of rigid bodies.,Applying physical laws to real systems
-Year 2,S3,Electronics and Signals,Engineering Science,5,Analog circuits and signal processing.,Designing and measuring simple circuits
-Year 2,S3,Project Management,Management,3,Planning and teamwork methods (Agile / Gantt).,Organising a team project
-Year 2,S4,Data Structures and Algorithms,Computer Science,5,Complexity and core data structures.,Choosing efficient solutions
-Year 3,S5,Engineering Project (team),Project,8,Six-month team project with an industrial partner.,Delivering a result for a real client
-Year 3,S5,Sustainability for Engineers,Humanities,3,Life-cycle analysis and eco-design.,Evaluating environmental impact
+Year 1,S1,Integration and probability,mathematics
+Year 1,S1,Imperative programming,computer science
+Year 1,S1,Statistics and numerical analysis,mathematics
+Year 1,S1,Data analysis,mathematics
+Year 1,S1,Modelisation and system architecture,computer science
