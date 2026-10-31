@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sport and Other Activities – E-portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>Sport and Other Activities</h1>
+  <p class="lead">Beyond the classroom: the sports and activities that keep me balanced and develop my personal skills.</p>
+
+  <h2>Sport</h2>
+  <div data-csv="activities.csv" data-render="cards" data-filter="type=Sport"
+       data-title="activity" data-subtitle="level" data-meta="period" data-text="description"></div>
+
+  <h2>Culture and other activities</h2>
+  <div data-csv="activities.csv" data-render="cards"
+       data-title="activity" data-subtitle="level" data-meta="period|type" data-text="description"></div>
+
+  <h2>Reflection</h2>
+  <div class="reflection">
+    <p>Explain what these activities bring you (discipline, teamwork, creativity, stress management) and how they connect to your professional profile.</p>
+  </div>
+</main>
+</body>
+</html>

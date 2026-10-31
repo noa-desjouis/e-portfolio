@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Career Development – E-portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>Career Development</h1>
+  <p class="lead">My professional experience so far and the path I want to follow.</p>
+
+  <h2>Experience timeline</h2>
+  <div data-csv="career.csv" data-render="timeline"
+       data-date="date" data-title="title" data-subtitle="organization"
+       data-text="description" data-text2="skills_gained" data-label2="Skills gained:" data-tag="type"></div>
+
+  <h2>Skills</h2>
+  <div data-csv="skills.csv" data-render="skills"></div>
+
+  <h2>Professional project</h2>
+  <div class="reflection">
+    <p>Describe your target sector and role, the skills you still want to develop, and the steps you plan (certifications, networking, further study).</p>
+  </div>
+
+  <div class="links">
+    <a class="btn" data-profile="email" data-prefix="mailto:" href="#">Contact me</a>
+    <a class="btn alt" data-profile="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</main>
+</body>
+</html>

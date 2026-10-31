@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sustainability and Civic Engagement – E-portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>Sustainability and Civic Engagement</h1>
+  <p class="lead">As an engineer I want to act responsibly. Here are my commitments for the environment and for society.</p>
+
+  <h2>My commitments</h2>
+  <div data-csv="engagement.csv" data-render="cards"
+       data-title="organization" data-subtitle="role" data-meta="period|theme"
+       data-text="description"></div>
+
+  <h2>Impact</h2>
+  <div data-csv="engagement.csv" data-render="table" data-cols="period|organization|role|impact" data-search="off"></div>
+
+  <h2>Reflection</h2>
+  <div class="reflection">
+    <p>Explain why these commitments matter to you, what you achieved with others, and how you will include sustainability in your future engineering work.</p>
+  </div>
+</main>
+</body>
+</html>

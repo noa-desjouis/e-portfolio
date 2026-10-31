@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>International Mobility – E-portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>International Mobility</h1>
+  <p class="lead">My experiences abroad: where I went, what I did and what I learned about others and about myself.</p>
+
+  <h2>My experiences</h2>
+  <div data-csv="mobility.csv" data-render="timeline"
+       data-date="period" data-title="institution" data-subtitle="city|country"
+       data-text="description" data-text2="learned" data-label2="What I learned:" data-tag="type"></div>
+
+  <h2>Overview</h2>
+  <div data-csv="mobility.csv" data-render="table" data-cols="period|country|city|institution|type" data-search="off"></div>
+
+  <h2>Reflection</h2>
+  <div class="reflection">
+    <p>Describe how this experience changed you: intercultural skills, language progress, independence, and how it supports your career plans.</p>
+  </div>
+</main>
+</body>
+</html>
