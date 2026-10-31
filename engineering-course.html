@@ -11,18 +11,18 @@
 <body>
 <main>
   <h1>Engineering Course</h1>
-  <p class="lead">An overview of my engineering curriculum: the modules I followed, what I learned from them and the skills I developed.</p>
+  <p class="lead">An overview of my engineering curriculum: the modules I followed, the projects I carried out and what I produced.</p>
 
   <h2>My modules</h2>
   <div data-csv="courses.csv" data-render="table" data-cols="year|semester|course|category|credits|key_learning"></div>
 
-  <h2>Skills</h2>
-  <div data-csv="skills.csv" data-render="skills"></div>
+  <h2>Projects</h2>
+  <div data-csv="projects.csv" data-render="cards"
+       data-title="project" data-subtitle="role" data-meta="period|context|team"
+       data-text="description" data-tag="tools"></div>
 
-  <h2>Reflection</h2>
-  <div class="reflection">
-    <p>Write here a short reflection: which course or project taught you the most, what was difficult, and how your engineering studies changed the way you solve problems.</p>
-  </div>
+  <h2>Productions</h2>
+  <div data-csv="productions.csv" data-render="table" data-cols="title|type|date|project|link"></div>
 </main>
 </body>
 </html>

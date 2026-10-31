@@ -95,7 +95,7 @@ const R = {
     const search = el.dataset.search !== "off";
     el.innerHTML = (search ? `<div class="toolbar"><input type="search" placeholder="Filter…" aria-label="Filter"></div>` : "") +
       `<div class="table-wrap"><table><thead><tr>${cols.map(c => `<th>${esc(c.replace(/_/g, " "))}</th>`).join("")}</tr></thead><tbody>` +
-      rows.map(r => `<tr>${cols.map(c => `<td>${esc(r[c])}</td>`).join("")}</tr>`).join("") + `</tbody></table></div>`;
+      rows.map(r => `<tr>${cols.map(c => `<td>${/^(https?:\/\/|[\w./-]+\.(pdf|zip|docx?|pptx?|png|jpe?g)$)/i.test(r[c]) ? `<a href="${esc(r[c])}" target="_blank" rel="noopener">${esc(r[c].length > 40 ? "Open" : r[c])}</a>` : esc(r[c])}</td>`).join("")}</tr>`).join("") + `</tbody></table></div>`;
     const inp = el.querySelector("input");
     if (inp) inp.addEventListener("input", () => {
       const q = inp.value.toLowerCase();
