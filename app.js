@@ -125,7 +125,11 @@ async function init() {
   for (const el of document.querySelectorAll("[data-csv]")) {
     try {
       let rows = await loadCSV(el.dataset.csv);
-      if (el.dataset.filter) { const [k, v] = el.dataset.filter.split("="); rows = rows.filter(r => r[k] === v); }
+      if (el.dataset.filter) {
+        // "col=value" keeps matching rows, "col!=value" excludes them
+        const m = el.dataset.filter.match(/^([^=!]+)(!?=)(.*)$/);
+        if (m) rows = rows.filter(r => m[2] === "=" ? r[m[1]] === m[3] : r[m[1]] !== m[3]);
+      }
       R[el.dataset.render](rows, el);
     } catch (e) { el.innerHTML = `<p class="error">${esc(e.message)}</p>`; }
   }
